@@ -1,0 +1,88 @@
+.descriptionbox {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+.descriptionbox-navigator {
+  display: flex;
+  flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+  border-bottom: 2px solid #eee;
+}
+
+.descriptionbox-nav-box {
+  flex: 1; /* Makes navigation tabs flexible */
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  text-align: center; /* Center text for better responsiveness */
+  transition: all 0.3s ease;
+}
+
+.descriptionbox-nav-box.active {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 3px solid #007bff;
+  background-color: white;
+}
+
+.descriptionbox-nav-box:not(.active):hover {
+  background-color: #eee;
+}
+
+/* Content */
+.descriptionbox-content {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.descriptionbox-description,
+.descriptionbox-reviews {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .descriptionbox {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .descriptionbox-nav-box {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .descriptionbox-content {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .descriptionbox {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .descriptionbox-nav-box {
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .descriptionbox-content {
+      font-size: 12px;
+  }
+}

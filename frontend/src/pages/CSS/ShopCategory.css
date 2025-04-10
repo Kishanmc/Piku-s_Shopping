@@ -1,0 +1,113 @@
+.shop-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.shop-category img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Sorting Section */
+.shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px 0;
+    font-size: clamp(14px, 2vw, 16px); /* Responsive font size */
+    font-weight: 500;
+}
+
+.shopcategory-sort {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.shopcategory-sort img {
+    width: 15px;
+    margin-left: 8px;
+}
+
+.shopcategory-sort:hover {
+    background: #ddd;
+}
+
+/* Responsive Product Grid */
+.shopcat-pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* Load More Button */
+.loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    background: #c1c8d0;
+    color: white;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 75px;
+    cursor: pointer;
+    margin: 40px auto;
+    width: fit-content;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.loadmore:hover {
+    background: #5a646e;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .shopcategory-indexSort {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .shopcat-pro {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted for smaller screens */
+        gap: 15px;
+    }
+
+    .loadmore {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-category img {
+        max-height: 250px; /* Reduce image height for small screens */
+    }
+
+    .shopcategory-indexSort {
+        font-size: 14px;
+    }
+
+    .shopcat-pro {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .loadmore {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}

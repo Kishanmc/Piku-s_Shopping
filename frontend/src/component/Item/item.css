@@ -1,0 +1,93 @@
+/* Item Container */
+.item {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Product Name */
+.item p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Price Section */
+.item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* New Price */
+.item-new-prices {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d; /* Red for emphasis */
+}
+
+/* Old Price (Strikethrough) */
+.item-new-prices:nth-child(2) {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+
+    .item-new-prices {
+        font-size: 16px;
+    }
+
+    .item-new-prices:nth-child(2) {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        max-width: 150px;
+        padding: 8px;
+    }
+
+    .item p {
+        font-size: 12px;
+    }
+
+    .item-new-prices {
+        font-size: 14px;
+    }
+
+    .item-new-prices:nth-child(2) {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,194 @@
+.cart-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(18px, 3vw, 24px); /* Responsive font size */
+}
+
+/* Cart Table Styling */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.cart-product-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.cart-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(14px, 2vw, 16px);
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background-color: #218838;
+}
+
+.cart-btn.remove {
+    background-color: #dc3545;
+}
+
+.cart-btn.remove:hover {
+    background-color: #c82333;
+}
+
+/* Cart Totals Section */
+.cart-totals {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-totals h2 {
+    margin-bottom: 15px;
+    font-size: clamp(18px, 3vw, 20px);
+}
+
+.totals-details {
+    font-size: clamp(16px, 2.5vw, 18px);
+    margin-bottom: 10px;
+}
+
+.totals-details p {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.totals-details span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Promo Code Section */
+.promo-code {
+    margin-top: 15px;
+}
+
+.promo-code p {
+    font-size: clamp(12px, 2vw, 14px);
+    color: #666;
+}
+
+.promo-code input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(14px, 2vw, 16px);
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 15px;
+    }
+
+    .cart-table {
+        font-size: 14px;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 8px;
+    }
+
+    .cart-btn {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .promo-code input {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-container {
+        padding: 10px;
+    }
+
+    .cart-table,
+    .totals-details {
+        font-size: 12px;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 6px;
+    }
+
+    .cart-product-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cart-btn {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .promo-code input {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .submit-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

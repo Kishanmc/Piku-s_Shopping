@@ -1,0 +1,103 @@
+.offers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 8%;
+  background: linear-gradient(to bottom, #fce4ec, white);
+  border-radius: 37px;
+  margin: 20px auto;
+  max-width: 90%;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+/* Left Side */
+.offers-left {
+  flex: 1;
+  text-align: left;
+}
+
+.offers-left h1 {
+  font-size: clamp(32px, 5vw, 48px); /* Responsive font size */
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.offers-left p {
+  font-size: clamp(12px, 1.8vw, 14px);
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.offers-left button {
+  padding: 12px 24px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.offers-left button:hover {
+  background-color: #c62828;
+}
+
+/* Right Side */
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.offers-right img {
+  max-width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .offers {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+  }
+
+  .offers-left {
+      text-align: center;
+  }
+
+  .offers-right {
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .offers-right img {
+      max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .offers {
+      padding: 30px;
+  }
+
+  .offers-left h1 {
+      font-size: clamp(24px, 6vw, 36px);
+  }
+
+  .offers-left button {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+
+  .offers-right img {
+      max-width: 90%;
+  }
+}

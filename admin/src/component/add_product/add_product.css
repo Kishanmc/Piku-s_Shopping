@@ -1,0 +1,114 @@
+/* Container Styling */
+.add-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Fields */
+  .addproduct-itemfield {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .addproduct-itemfield p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .addproduct-itemfield input,
+  .addproduct-itemfield select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .addproduct-itemfield input:focus,
+  .addproduct-itemfield select:focus {
+    border-color: #007bff;
+  }
+  
+  /* File Upload */
+  .addproduct-itemfield label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .addproduct-itemfield label:hover {
+    border-color: #007bff;
+  }
+  
+  .addproduct-itemfield img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+  }
+  
+  /* Hide default file input */
+  #file-input {
+    display: none;
+  }
+  
+  /* Button */
+  .addproduct-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .addproduct-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 📱 Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .add-product {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .addproduct-itemfield p {
+      font-size: 14px;
+    }
+  
+    .addproduct-itemfield input,
+    .addproduct-itemfield select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .addproduct-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .addproduct-itemfield img {
+      max-width: 150px;
+    }
+  }
+  

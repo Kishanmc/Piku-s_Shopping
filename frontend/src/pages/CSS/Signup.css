@@ -1,0 +1,140 @@
+.auth-container {
+  background-color: #ede1e5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-form {
+  background: rgb(60, 145, 148);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-form h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background: white;
+}
+
+.auth-form input:focus {
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8);
+  background-color: #f8f8f8;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ff3b3b;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.1s;
+}
+
+.auth-form button:hover {
+  background: #d32f2f;
+}
+
+.auth-form button:active {
+  transform: scale(0.98);
+}
+
+.auth-form p {
+  margin-top: 15px;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.auth-form a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  display: block;
+  margin-top: 15px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.toggle-form {
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.toggle-form:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .auth-form {
+    padding: 25px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .auth-form input {
+    padding: 12px;
+  }
+
+  .auth-form button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 22px;
+    border-radius: 10px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .auth-form input {
+    font-size: 0.95rem;
+  }
+
+  .auth-form button {
+    font-size: 0.95rem;
+  }
+}

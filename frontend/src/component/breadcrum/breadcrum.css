@@ -1,0 +1,58 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Responsive font size */
+  color: #555;
+  padding: 1rem;
+  font-weight: bold;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.breadcrum a {
+  text-decoration: none;
+  color: #00c8ff;
+  transition: color 0.3s ease-in-out;
+  font-size: inherit; /* Ensures text scales with the container */
+}
+
+.breadcrum a:hover {
+  color: #0074b3;
+}
+
+.breadcrum img {
+  width: 12px;
+  height: 12px;
+}
+
+.breadcrum span {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .breadcrum {
+      font-size: 0.875rem;
+      gap: 0.25rem; /* Reduce spacing on smaller screens */
+      padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .breadcrum img {
+      width: 10px;
+      height: 10px; /* Scale icons down */
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrum {
+      font-size: 0.75rem;
+      gap: 0.2rem;
+      padding: 0.3rem;
+  }
+
+  .breadcrum img {
+      width: 8px;
+      height: 8px;
+  }
+}
